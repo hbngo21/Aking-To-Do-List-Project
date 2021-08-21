@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'toColor.dart';
 
 class SeventhScreen extends StatelessWidget{
   @override
@@ -20,7 +19,7 @@ class SeventhScreen extends StatelessWidget{
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.fromLTRB(24, 60.29, 0, 0),
                     child: Text("Reset Password", style: TextStyle(
-                      color: '#313131'.toColor(),
+                      color: Color(0xff313131),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 36,
                       fontWeight: FontWeight.w600,
@@ -32,7 +31,7 @@ class SeventhScreen extends StatelessWidget{
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.fromLTRB(24, 12, 0, 0),
                     child: Text("Reset code was sent to your email. Please enter the code and create new password", style: TextStyle(
-                      color: '#9B9B9B'.toColor(),
+                      color: Color(0xFF9B9B9B),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -44,7 +43,7 @@ class SeventhScreen extends StatelessWidget{
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.fromLTRB(24, 38, 0, 0),
                     child: Text("Reset code", style: TextStyle(
-                      color: '#313131'.toColor(),
+                      color: Color(0xff313131),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -56,7 +55,7 @@ class SeventhScreen extends StatelessWidget{
                       padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
                       child: TextField(
                         style: TextStyle(
-                          color: '#313131'.toColor(),
+                          color: Color(0xff313131),
                           fontFamily: 'AvenirNextRoundedPro',
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
@@ -64,7 +63,7 @@ class SeventhScreen extends StatelessWidget{
                         decoration: InputDecoration(
                           hintText: "Enter your number",
                           hintStyle: TextStyle(
-                            color: '#C6C6C6'.toColor(),
+                            color: Color(0xFFC6C6C6),
                             fontFamily: 'AvenirNextRoundedPro',
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
@@ -77,7 +76,7 @@ class SeventhScreen extends StatelessWidget{
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.fromLTRB(24, 28, 0, 0),
                     child: Text("New password", style: TextStyle(
-                      color: '#313131'.toColor(),
+                      color: Color(0xff313131),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -89,7 +88,7 @@ class SeventhScreen extends StatelessWidget{
                       padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
                       child: TextField(
                         style: TextStyle(
-                          color: '#313131'.toColor(),
+                          color: Color(0xff313131),
                           fontFamily: 'AvenirNextRoundedPro',
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
@@ -97,7 +96,7 @@ class SeventhScreen extends StatelessWidget{
                         decoration: InputDecoration(
                           hintText: "Enter your password",
                           hintStyle: TextStyle(
-                            color: '#C6C6C6'.toColor(),
+                            color: Color(0xFFC6C6C6),
                             fontFamily: 'AvenirNextRoundedPro',
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
@@ -110,7 +109,7 @@ class SeventhScreen extends StatelessWidget{
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.fromLTRB(24, 28, 0, 0),
                     child: Text("Confirm password", style: TextStyle(
-                      color: '#313131'.toColor(),
+                      color: Color(0xff313131),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -122,7 +121,7 @@ class SeventhScreen extends StatelessWidget{
                       padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
                       child: TextField(
                         style: TextStyle(
-                          color: '#313131'.toColor(),
+                          color: Color(0xff313131),
                           fontFamily: 'AvenirNextRoundedPro',
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
@@ -130,7 +129,7 @@ class SeventhScreen extends StatelessWidget{
                         decoration: InputDecoration(
                           hintText: "Enter your confirm password",
                           hintStyle: TextStyle(
-                            color: '#C6C6C6'.toColor(),
+                            color: Color(0xFFC6C6C6),
                             fontFamily: 'AvenirNextRoundedPro',
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
@@ -146,7 +145,7 @@ class SeventhScreen extends StatelessWidget{
                           width: 327,
                           child: RaisedButton(
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5))),
-                            color: '#f96060'.toColor(),
+                            color: Color(0xfff96060),
                             onPressed: () {
                               Navigator.popAndPushNamed(context, '/eighth');
                             },

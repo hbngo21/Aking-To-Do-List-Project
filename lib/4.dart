@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'toColor.dart';
 
 class ForthScreen extends StatelessWidget{
   @override
@@ -19,7 +18,7 @@ class ForthScreen extends StatelessWidget{
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 28, 0, 0),
                     child: Text("Tasks and assign", style: TextStyle(
-                      color: '#313131'.toColor(),
+                      color: Color(0xff313131),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 24,
                       fontWeight: FontWeight.w600,
@@ -30,7 +29,7 @@ class ForthScreen extends StatelessWidget{
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 9, 0, 0),
                     child: Text("Tasks and assign them to colleagues", style: TextStyle(
-                      color: '#313131'.toColor(),
+                      color: Color(0xff313131),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
@@ -68,26 +67,6 @@ class ForthScreen extends StatelessWidget{
 
                       Column(
                           children: [
-                            /*Container(
-                                alignment: Alignment.center,
-                                height: 48,
-                                width: 293,
-                                decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.all(Radius.circular(5)),
-                                    border: Border.all(
-                                        color: Colors.white, style: BorderStyle.solid
-                                    )
-                                ),
-                                child: Text("Get Started", style: TextStyle(
-                                  color: '#313131'.toColor(),
-                                  fontFamily: 'AvenirNextRoundedPro',
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                ),
-                            ),*/
-
                             SizedBox(
                                 width: 293,
                                 height: 48,
@@ -98,7 +77,7 @@ class ForthScreen extends StatelessWidget{
                                     Navigator.popAndPushNamed(context, '/fifth');
                                   },
                                   child: Text("Get Started", style: TextStyle(
-                                    color: '#313131'.toColor(),
+                                    color: Color(0xff313131),
                                     fontFamily: 'AvenirNextRoundedPro',
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,

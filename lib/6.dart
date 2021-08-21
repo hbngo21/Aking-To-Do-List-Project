@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'toColor.dart';
 
 class SixthScreen extends StatelessWidget{
   @override
@@ -20,7 +19,7 @@ class SixthScreen extends StatelessWidget{
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.fromLTRB(24, 60.29, 0, 0),
                     child: Text("Forgot Password", style: TextStyle(
-                      color: '#313131'.toColor(),
+                      color: Color(0xff313131),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 36,
                       fontWeight: FontWeight.w600,
@@ -32,7 +31,7 @@ class SixthScreen extends StatelessWidget{
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.fromLTRB(24, 12, 0, 0),
                     child: Text("Please enter your email below to receive your password reset instructions", style: TextStyle(
-                      color: '#9B9B9B'.toColor(),
+                      color: Color(0xFF9B9B9B),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
@@ -44,7 +43,7 @@ class SixthScreen extends StatelessWidget{
                     alignment: Alignment.topLeft,
                     padding: EdgeInsets.fromLTRB(24, 48, 0, 0),
                     child: Text("Username", style: TextStyle(
-                      color: '#313131'.toColor(),
+                      color: Color(0xff313131),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -56,7 +55,7 @@ class SixthScreen extends StatelessWidget{
                       padding: EdgeInsets.fromLTRB(24, 0, 24, 0),
                       child: TextField(
                         style: TextStyle(
-                          color: '#313131'.toColor(),
+                          color: Color(0xff313131),
                           fontFamily: 'AvenirNextRoundedPro',
                           fontSize: 16,
                           fontWeight: FontWeight.w400,
@@ -64,7 +63,7 @@ class SixthScreen extends StatelessWidget{
                         decoration: InputDecoration(
                           hintText: "Enter your username",
                           hintStyle: TextStyle(
-                            color: '#C6C6C6'.toColor(),
+                            color: Color(0xFFC6C6C6),
                             fontFamily: 'AvenirNextRoundedPro',
                             fontSize: 16,
                             fontWeight: FontWeight.w400,
@@ -80,7 +79,7 @@ class SixthScreen extends StatelessWidget{
                           width: 327,
                           child: RaisedButton(
                             shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(5))),
-                            color: '#f96060'.toColor(),
+                            color: Color(0xfff96060),
                             onPressed: () {
                               Navigator.popAndPushNamed(context, '/seventh');
                             },

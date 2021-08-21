@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'toColor.dart';
 
 class ThirdScreen extends StatelessWidget{
   @override
@@ -19,7 +18,7 @@ class ThirdScreen extends StatelessWidget{
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
                     child: Text("Work happens", style: TextStyle(
-                      color: '#313131'.toColor(),
+                      color: Color(0xff313131),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 24,
                       fontWeight: FontWeight.w600,
@@ -30,7 +29,7 @@ class ThirdScreen extends StatelessWidget{
                   Padding(
                     padding: EdgeInsets.fromLTRB(0, 9, 0, 0),
                     child: Text("Get notified when work happens", style: TextStyle(
-                      color: '#313131'.toColor(),
+                      color: Color(0xff313131),
                       fontFamily: 'AvenirNextRoundedPro',
                       fontSize: 18,
                       fontWeight: FontWeight.w400,
@@ -68,27 +67,6 @@ class ThirdScreen extends StatelessWidget{
 
                       Column(
                           children: [
-                            /*Container(
-                                alignment: Alignment.center,
-                                height: 48,
-                                width: 293,
-                                decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.all(Radius.circular(5)),
-                                    border: Border.all(
-                                        color: Colors.white, style: BorderStyle.solid
-                                    )
-                                ),
-                                //child: Image.asset("assets/images/GetStarted.png")
-                                child: Text("Get Started", style: TextStyle(
-                                  color: '#313131'.toColor(),
-                                  fontFamily: 'AvenirNextRoundedPro',
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.bold,
-                                ),
-                                ),
-                            ),*/
-
                             SizedBox(
                                 width: 293,
                                 height: 48,
@@ -99,7 +77,7 @@ class ThirdScreen extends StatelessWidget{
                                     Navigator.popAndPushNamed(context, '/forth');
                                   },
                                   child: Text("Get Started", style: TextStyle(
-                                    color: '#313131'.toColor(),
+                                    color: Color(0xff313131),
                                     fontFamily: 'AvenirNextRoundedPro',
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
@@ -109,7 +87,6 @@ class ThirdScreen extends StatelessWidget{
                             ),
 
                             Container(
-                              //padding: EdgeInsets.fromLTRB(0, 32, 0, 0),
                               child: FlatButton(
                                 child: Text("Log In", style: TextStyle(
                                   color: Colors.white,

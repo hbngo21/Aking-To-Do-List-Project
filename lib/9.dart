@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'toColor.dart';
 
 class NinthScreen extends StatelessWidget {
   int _selectedIndex = 0;
@@ -12,7 +11,7 @@ class NinthScreen extends StatelessWidget {
         new List<String>.generate(10, (i) => "item  ${i + 1}");
     return MaterialApp(
         theme: ThemeData(
-          primaryColor: '#f96060'.toColor(),
+          primaryColor: Color(0xfff96060),
         ),
         home: DefaultTabController(
             length: 2,

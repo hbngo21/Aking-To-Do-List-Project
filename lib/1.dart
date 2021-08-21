@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'toColor.dart';
 
 class FirstScreen extends StatelessWidget{
   @override
@@ -23,24 +22,7 @@ class FirstScreen extends StatelessWidget{
                   Padding(
                       padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                       child: Image.asset("assets/images/aking.png")
-                      /*child: Text("aking", style: TextStyle(
-                            color: '#010101'.toColor(),
-                            fontSize: 48,
-                            fontWeight: FontWeight.bold,
-                            shadows: [
-                              Shadow(
-                                  offset: Offset(0, 4),
-                                  color: Colors.black.withOpacity(0.25),
-                                  blurRadius: 4
-                              )
-                            ]
-
-                        ),
-                      )*/
-
                   ),
-
-                      //child: Image.asset("assets/images/aking.png")
 
                   Container(
                     alignment: AlignmentDirectional.bottomCenter,
