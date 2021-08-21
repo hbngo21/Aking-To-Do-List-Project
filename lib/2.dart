@@ -87,7 +87,6 @@ class SecondScreen extends StatelessWidget{
                           ),
 
                           Container(
-                              padding: EdgeInsets.fromLTRB(0, 32, 0, 0),
                               child: FlatButton(
                                 child: Text("Log In", style: TextStyle(
                                   color: Colors.white,
