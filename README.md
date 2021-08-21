@@ -1,6 +1,6 @@
-# todolist
+# Aking-To-Do-List-Project
 
-A new Flutter project.
+My first Flutter project in Mobile App Development course of Devera.
 
 ## Getting Started
 
