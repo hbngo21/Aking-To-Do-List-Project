@@ -1,29 +1,30 @@
 import 'package:flutter/material.dart';
-import '1.dart';
-import '2.dart';
-import '3.dart';
-import '4.dart';
-import '5.dart';
-import '6.dart';
-import '7.dart';
-import '8.dart';
-import '9.dart';
+import 'Walkthrough.dart';
+import 'Walkthrough1.dart';
+import 'Walkthrough2.dart';
+import 'Walkthrough3.dart';
+import 'SignIn.dart';
+import 'ForgotPassword.dart';
+import 'ResetPassword.dart';
+import 'Successful.dart';
+import 'WorkListToday.dart';
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home: Walkthrough(),
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
-        '/': (context) => FirstScreen(),
-        '/second': (context) => SecondScreen(),
-        '/third': (context) => ThirdScreen(),
-        '/forth': (context) => ForthScreen(),
-        '/fifth': (context) => FifthScreen(),
-        '/sixth': (context) => SixthScreen(),
-        '/seventh': (context) => SeventhScreen(),
-        '/eighth': (context) => EighthScreen(),
-        '/ninth': (context) => NinthScreen(),
+        '/Walkthrough1': (context) => Walkthrough1(),
+        '/Walkthrough2': (context) => Walkthrough2(),
+        '/Walkthrough3': (context) => Walkthrough3(),
+        '/SignIn': (context) => SignIn(),
+        '/ForgotPassword': (context) => ForgotPassword(),
+        '/ResetPassword': (context) => ResetPassword(),
+        '/Successful': (context) => Successful(),
+        '/WorkListToday': (context) => WorkListToday(),
       },
     );
   }
