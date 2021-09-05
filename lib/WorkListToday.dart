@@ -97,27 +97,80 @@ class WorkListToday extends StatelessWidget {
                   Icon(Icons.directions_transit),
                 ],
               ),
-              bottomNavigationBar: BottomNavigationBar(
-                backgroundColor: Color.fromRGBO(41, 46, 78, 1),
-                items: const <BottomNavigationBarItem>[
-                  BottomNavigationBarItem(
-                    icon: Icon(Icons.check_circle_outline),
-                    label: 'My Task',
-                  ),
-                  BottomNavigationBarItem(
-                    icon: Icon(Icons.menu),
-                    label: 'Menu',
-                  ),
-                  BottomNavigationBarItem(
-                    icon: Icon(Icons.school),
-                    label: 'Quick',
-                  ),
-                ],
-                currentIndex: _selectedIndex,
-                selectedItemColor: Colors.white,
-                unselectedItemColor: Color.fromRGBO(142, 142, 147, 1),
-                onTap: _onItemTapped,
+              floatingActionButton: FloatingActionButton(
+                onPressed: () { },
+                //tooltip: 'Increment',
+                child: Icon(Icons.add),
+                backgroundColor: Color(0xFFF68888),
+                elevation: 2.0,
               ),
-            )));
+              floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+              bottomNavigationBar: BottomAppBar( //bottom navigation bar on scaffold
+                color: Color(0xFF292E4E),
+                child: Row( //children inside bottom appbar
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Container(
+                      padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+                      height: 62,
+                      child: Column(
+                        children: [
+                          IconButton(icon: Icon(Icons.check_circle_rounded, color: Colors.white,),
+                                  onPressed: () {},),
+                          Text(
+                            "My Task",
+                            style: TextStyle(color: Colors.white, fontSize: 12),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+                      height: 62,
+                      child: Column(
+                        children: [
+                          IconButton(icon: Icon(Icons.check_circle_rounded, color: Colors.white,),
+                            onPressed: () {},),
+                          Text(
+                            "Menu",
+                            style: TextStyle(color: Colors.white, fontSize: 12),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+                      height: 62,
+                      child: Column(
+                        children: [
+                          IconButton(icon: Icon(Icons.check_circle_rounded, color: Colors.white,),
+                            onPressed: () {},),
+                          Text(
+                            "Quick",
+                            style: TextStyle(color: Colors.white, fontSize: 12),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(16, 0, 0, 0),
+                      height: 62,
+                      child: Column(
+                        children: [
+                          IconButton(icon: Icon(Icons.person_rounded, color: Colors.white,),
+                            onPressed: () {},),
+                          Text(
+                            "Profile",
+                            style: TextStyle(color: Colors.white, fontSize: 12),
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+    )));
   }
 }
